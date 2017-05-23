@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>列表页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+	    	margin-top: 0px;
+	    	margin-bottom: 0px;
+	    	margin-right: 0 auto;
+	    	margin-left: 0 auto;
+	    	padding: 0px;
+	    	border: none;
+	    	font-family: '宋体'；
+
+	    }
+		body{
+            
+			font-size: 12px;
+			color: #522a06;
+			font-family: '宋体';
+			background-image: images9/bodybg.gif;
+			background-repeat: repeat-x;
+			font-weight: 800px;
+
+		}
+		div{
+			padding: 0;
+		}
+		ul{
+			list-style-type: none;
+		}
+		a{text-decoration: none; color: #522a06;}
+		a:hover{text-decoration: underline;}
+		#header{
+			height: 205px;
+			background-image: url(images9/bg.gif);
+            background-position: top center;
+		}
+		#banner{
+			width: 1000px;
+			height: 164px;
+            margin: 0 auto;
+		}
+		img.logo{
+			position: absolute;
+			top: 38px;
+			left: 210px;
+		}
+		#nav{
+			height: 40px;
+			background-image: url(images9/nav.jpg);
+		}
+		.nav_body{
+			width: 1000px;
+			margin: 0 auto;	
+		}
+		.nav_content{
+			width: 800px;
+			font-weight: bolder;
+			color: #fff;
+			line-height: 40px;
+			margin: 0 auto;
+			
+			display: inline-block;
+		}
+		a.nac_content{
+			color: #fff;
+		}
+
+		a.nac_content:hover{
+            text-decoration: none;
+            color: #f9f603;
+		}
+		
+        div.nav_search{
+			
+			display: inline-block;
+			padding-top: 6px;
+		}
+		
+		.shurukuang{
+			height: 19px;
+			width: 140px;
+			background-color: #f8f5ee;
+		}
+		.sousuo{
+			width: 44px;
+			height: 21px;
+			background-color: #000;
+			color: #fff;
+			border: 1px; solid; #f8f5ee;
+		}
+		
+        span{
+        	float: right;
+        	line-height: 41px;
+        }
+        ul{
+        	list-style-type: none;
+        }
+       
+        li.ul{
+        	list-style-type: circle;
+
+        }
+
+        
+
+        #content{
+        	width: 1000px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .mianbaoxue{
+        	height: 40px;
+        	line-height: 40px;
+        	padding-left: 43px;
+        }
+        .content_left{
+        	width: 200px;
+        	float: left;
+        }
+        .content_right{
+        	width: 700px;
+        	float: left;
+        	margin-left: 16px;
+        }
+        .content_left_1{
+        	background-image: url(images9/bg.png);
+        	height: 300px;
+        }
+        .content_left_1_tu{
+            margin: 0 auto;
+            
+        }
+        .zhaoshengqishi{
+        	background-image: url(images9/menubg.gif);
+        	text-align: center;
+        	color: red;
+        	font-weight: 500px;
+        	background-position: center;
+        	height: 29px;
+        	background-repeat: no-repeat;
+        	padding-top: 10px;
+
+        }
+        .content_left_1_wen{
+        	text-align: center;
+        	line-height:30px;
+        	color: black; 
+        }
+        .content_left_2{
+        	margin-top: 30px;
+        	background-image: url(images9/bg.png);
+        	height: 250px;
+        }
+        .content_left_2_tu{
+        	text-align: center;
+        	margin-top: 10px;
+        }
+        .content_left_2_wen{
+        	text-align: center;
+        	line-height: 30px;
+        }
+        .content_left_3{
+        	margin-top: 30px;
+        }
+        .content_right_tu{
+        	background-image: url(images9/listtitle.png);
+        	height: 30px;
+        	padding-top: 12px;
+        	padding-left: 60px;
+        	color: red;
+        	font-weight: 500px;
+        	font-size: 16px;
+        }
+        .content_right_list{
+        	line-height: 30px;
+        	margin-top: 5px;
+        	padding: 5px;
+        	line-height: 41px;
+        	font-size: 14px;
+        }
+        ul.list{
+        	margin-left: 15px;
+        }
+        .content_right_ye{
+        	text-align: center;
+        	padding: 5px;
+        	display: inline-block;
+        	margin-left: 150px;
+        	
+        }
+        .content_right_yema{
+        	border-style: solid;
+        	border-width: 1px;
+        	width: 25px;
+        	height: 20px;
+        	margin: 3px;
+        	text-align: center;
+        	padding-top: 7px;
+        	display: inline-block;
+        }
+
+
+
+
+
+
+
+
+
+
+        #footer{
+        	height: 105px;
+        	clear: both;
+        	background-image: url(images9/foot.gif);
+        	padding-top: 20px;
+        	line-height: 5px;
+        	text-align: center;
+        }
+        .footer1{
+        	margin: 0 auto;
+        }
+        .footer2{
+        	text-align: center;
+        	margin-top: 50px;
+
+        }
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="banner"><img src="images9/logo.png" class="logo"></div>
+		<div id="nav">
+			<div class="nav_body">
+				<div class="nav_content">
+					<a href="#" class="nac_content"><font color="#f9f603">首页</font></a>   |
+				    <a href="#" class="nac_content">中心概况</a>   |
+				    <a href="#" class="nac_content">培训动态</a>   |
+				    <a href="#" class="nac_content">学术争鸣</a>   |
+				    <a href="#" class="nac_content">书坛新闻</a>   |
+				    <a href="#" class="nac_content">名家展厅</a>   |
+				    <a href="#" class="nac_content">燕赵风采</a>   |
+				    <a href="#" class="nac_content">经典解读与示范</a>   |
+				    <a href="#" class="nac_content">谏言互动</a>   |
+				</div>
+				<div class="nav_search">
+					<input type="text"/ name="shuru" class="shurukuang">
+					<input type="button" name="sousuo" value="搜索" class="sousuo">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="mianbaoxue">
+			当前位置： 首页 > 书坛新闻
+		</div>
+		<div class="content_left">
+			<div class="content_left_1">
+				<div class="content_left_1_tu">
+					<img src="images9/pxdt.png">
+				</div>
+				<div class="zhaoshengqishi">
+					招生启事
+				</div>
+				<div class="content_left_1_wen">
+					<ul>
+						<li>公告发布</li>
+						<li>师生作品</li>
+						<li>艺考咨询</li>
+						<li>授课现场</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content_left_2">
+				<div class="content_left_2_tu">
+					<img src="images9/news.png">
+				</div>
+				<div class="content_left_2_wen">
+					<ul>
+						<li>普及书法教育</li>
+						<li>规范书法考级</li>
+						<li>探究书法之道</li>
+						<li>成就书法大家</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content_left_3">
+				<img src="images9/tel.gif">
+			</div>
+		</div>
+		<div class="content_right">
+			<div class="content_right_tu">
+				招生启事
+			</div>
+			<div class="content_right_list">
+				<ul class="list">
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a>
+					<span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+					<li  class="ul"><a href="#"> 2016年上半年书法等级考试报名通知</a><span>2016-03-15</span></li>
+				</ul>
+			</div>
+			<div class="content_right_ye">
+				<div class="content_right_yema">
+					<
+				</div>
+				<div class="content_right_yema">
+					1
+				</div>
+                <div class="content_right_yema">
+                	2
+                </div>
+                <div class="content_right_yema">
+                	3
+                </div>
+                <div class="content_right_yema">
+                	4
+                </div>
+                <div class="content_right_yema">
+                	5
+                </div>
+                <div class="content_right_yema">
+                	6
+                </div>
+                <div class="content_right_yema">
+                	7
+                </div>
+                ...
+                <div class="content_right_yema">
+                	199
+                </div>
+                <div class="content_right_yema">
+                	200
+                </div>
+                <div class="content_right_yema">
+                	>
+                </div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div footer1>
+			<a href="#">电子邮箱</a>    |
+			<a href="#">设为首页</a>    |
+			<a href="#">在线调查</a>    |
+			<a href="#">加入收藏</a>    |
+			<a href="#">网站地图</a>    |
+			<a href="#">关于我们</a>
+		</div>
+        <div footer2>
+        	<img src="images9/line.jpg"></br></br></br></br>
+            Copyright © 2013－2014 Habshufajia.com All Rights Reserved </br></br></br></br>
+            冀ICP备05067796号 冀公安教备110402440000号
+        </div>
+	</div>
+</body>
+</html>
